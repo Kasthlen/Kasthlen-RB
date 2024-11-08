@@ -14,3 +14,24 @@ nav{
     flex-wrap: wrap;
 
 }
+
+#contenedor{
+   display: flex;
+}
+.elemento{
+    height: 100px;
+width: 100px;
+}
+#e1{
+background-color: blue;
+margin: auto;
+
+}
+#e2{
+background-color: blueviolet;
+margin: auto;
+}
+#e3{
+background-color: brown;
+margin: auto;
+}
