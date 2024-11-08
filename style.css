@@ -1,0 +1,16 @@
+h1{
+    color: blue;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+#descripción{
+    text-align: center;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
