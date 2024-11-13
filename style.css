@@ -1,97 +1,134 @@
 /* *{
     margin: 0;
     padding: 0;
-}  sirve para cambbiar toda mi pagina (selector general)*/ 
-h1{
+}  sirve para cambbiar toda mi pagina (selector general)*/
+h1 {
     color: blue;
     justify-content: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    ;
     text-align: center;
 }
-#descripción{
+
+#descripción {
     text-align: center;
-    
+
 }
-nav{
+
+nav {
+
     /* display: flex;
     justify-content: space-around;
     flex-wrap: wrap; */
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(182, 247, 247);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 15px;
-
+    background: linear-gradient(-45deg, rgb(71, 71, 245), rgb(226, 86, 215), rgb(134, 160, 247));
 
 }
-nav ul{
-    display: flex; 
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    text-align: center;
+    display: flex;
     list-style: none;
-    
-
 }
-nav ul li{
+nav ul li {
     margin: auto;
     text-transform: uppercase;
     background-color: rgb(176, 148, 241);
     padding: 10px;
-    border-radius: 7%;
+    border-radius: 10%;
     font-weight: 700;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#contenedor{
-   display: flex;
+nav ul li:hover {
+    background: linear-gradient(45deg, rgb(28, 190, 141), rgb(75, 86, 233), rgb(110, 110, 209))
 }
-.elemento{
+
+.submenu {
+    display: none;
+}
+
+.submenu a {
+    text-decoration: none;
+}
+
+.submenu li:hover {
+    background: linear-gradient(-53deg, rgb(71, 71, 245), rgb(131, 106, 241), rgb(238, 134, 247))
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+
+
+#contenedor {
+    display: flex;
+}
+
+.elemento {
     height: 100px;
-width: 100px;
+    width: 100px;
 }
-#e1{
-background-color: blue;
-margin: auto;
+
+#e1 {
+    background-color: blue;
+    margin: auto;
 
 }
-#e2{
-background-color: blueviolet;
-margin: auto;
+
+#e2 {
+    background-color: blueviolet;
+    margin: auto;
 }
-#e2:hover{
+
+#e2:hover {
     background-color: aqua;
 }
-#e3{
-background-color: brown;
-margin: auto;
+
+#e3 {
+    background-color: brown;
+    margin: auto;
 }
-h2{ 
+
+h2 {
     color: blue;
     justify-content: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
-h3{
+
+h3 {
     color: blueviolet;
     justify-content: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
-a{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.poemasg{
-   display: grid;
-   grid-template-columns: 2fr 2fr 2fr;
-   justify-content: space-around;
 
-   
+a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-#recuerdo{
-margin: 10px 20px 10px 50px;
-background-color: aqua;
-border: 10px dotted blue; 
-border-radius: 20%;
-text-align: center;
-padding: 5%;
+
+.poemasg {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    justify-content: space-around;
+
+
+}
+
+#recuerdo {
+    margin: 10px 20px 10px 50px;
+    background-color: aqua;
+    border: 10px dotted blue;
+    border-radius: 20%;
+    text-align: center;
+    padding: 5%;
 }
 
 .heart {
@@ -100,29 +137,28 @@ padding: 5%;
     height: 100px;
     background-color: red;
     transform: rotate(-45deg);
-  }
-  
-  .heart::before,
-  .heart::after {
+}
+
+.heart::before,
+.heart::after {
     content: "";
     position: absolute;
     width: 100px;
     height: 100px;
     background-color: red;
     border-radius: 50%;
-  }
-  
-  .heart::before {
+}
+
+.heart::before {
     top: -50px;
     left: 0;
-  }
-  
-  .heart::after {
+}
+
+.heart::after {
     top: 0;
     left: 50px;
-  }
-  .heart:hover{
+}
+
+.heart:hover {
     background-color: blue;
-  }
-
-
+}
