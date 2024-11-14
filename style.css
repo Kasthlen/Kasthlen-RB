@@ -3,7 +3,7 @@
     padding: 0;
 }  sirve para cambbiar toda mi pagina (selector general)*/
 h1 {
-    color: blue;
+    color: rgb(238, 238, 243);
     justify-content: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     ;
@@ -12,7 +12,11 @@ h1 {
 
 #descripción {
     text-align: center;
+    color: aliceblue;
 
+}
+header{
+    background-image: url(/imagenes/violetas.jpeg)
 }
 
 nav {
@@ -43,6 +47,7 @@ nav ul li {
     border-radius: 10%;
     font-weight: 700;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
 }
 
 nav ul li:hover {
@@ -51,6 +56,8 @@ nav ul li:hover {
 
 .submenu {
     display: none;
+    position: absolute;
+    color: black ;
 }
 
 .submenu a {
@@ -58,43 +65,14 @@ nav ul li:hover {
 }
 
 .submenu li:hover {
-    background: linear-gradient(-53deg, rgb(71, 71, 245), rgb(131, 106, 241), rgb(238, 134, 247))
+    background: linear-gradient(-53deg, rgb(71, 71, 245), rgb(131, 106, 241), rgb(238, 134, 247));
+    color: black ;
 }
 
 nav ul li:hover ul {
     display: block;
 }
 
-
-
-#contenedor {
-    display: flex;
-}
-
-.elemento {
-    height: 100px;
-    width: 100px;
-}
-
-#e1 {
-    background-color: blue;
-    margin: auto;
-
-}
-
-#e2 {
-    background-color: blueviolet;
-    margin: auto;
-}
-
-#e2:hover {
-    background-color: aqua;
-}
-
-#e3 {
-    background-color: brown;
-    margin: auto;
-}
 
 h2 {
     color: blue;
@@ -118,8 +96,15 @@ a {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     justify-content: space-around;
-
-
+    
+}
+.poemas{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5%;
+    text-align: justify;
+    background-color: rgb(121, 144, 247);
+    justify-content:space-between
 }
 
 #recuerdo {
@@ -129,6 +114,9 @@ a {
     border-radius: 20%;
     text-align: center;
     padding: 5%;
+}
+h5{
+    text-align: center;
 }
 
 .heart {
