@@ -2,11 +2,25 @@
     margin: 0;
     padding: 0;
 }  sirve para cambbiar toda mi pagina (selector general)*/
+
+body {
+    background: repeating-linear-gradient(rgb(241, 231, 240), rgb(179, 86, 187), rgb(71, 71, 245), rgb(247, 134, 232));
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+html{
+    cursor: url("imagenes/cursorp_resized.png"), grabbing; }
+
+a{
+    cursor: url("imagenes/cursorp_resized.png"), grabbing; 
+
+}
+    
 h1 {
     color: rgb(238, 238, 243);
     justify-content: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    ;
     text-align: center;
 }
 
@@ -15,7 +29,8 @@ h1 {
     color: aliceblue;
 
 }
-header{
+
+header {
     background-image: url(/imagenes/violetas.jpeg)
 }
 
@@ -27,53 +42,48 @@ header{
     margin: 0 10px;
     top: 0;
     transform: rotate(-45deg);
-    position: fixed; 
-    left: 90%; 
+    position: fixed;
+    left: 90%;
     top: 85%;
     width: 50px;
-  }
-  
-  .corazon:before,
-  .corazon:after {
+}
+
+.corazon:before,
+.corazon:after {
     content: "";
-    background-color: rgb(199, 55, 218);
+    background-color: rgb(55, 93, 218);
     border-radius: 50%;
     height: 50px;
     position: absolute;
     width: 50px;
-  }
-  
-  .corazon:before {
+}
+
+.corazon:before {
     top: -25px;
     left: 0;
-  
-    
-  }
-  
-  .corazon:after {
+}
+
+.corazon:after {
     left: 25px;
     top: 0;
     content: "inicio";
     color: black;
-  }
-  
-  @keyframes latido {
-    0%
-    {
-      transform: scale( 1 )
-        rotate(-45deg);    
+}
+
+@keyframes latido {
+    0% {
+        transform: scale(1) rotate(-45deg);
     }
-    20%
-    {
-      transform: scale( 1.25 )
-        rotate(-45deg);  
+
+    20% {
+        transform: scale(1.25) rotate(-45deg);
     }
-     40%
-    {
-      transform: scale( 1.5 )
-        rotate(-45deg);
+
+    40% {
+        transform: scale(1.5) rotate(-45deg);
     }
-  }
+}
+
 nav {
 
     /* display: flex;
@@ -96,6 +106,7 @@ nav ul {
     display: flex;
     list-style: none;
 }
+
 nav ul li {
     margin: auto;
     text-transform: uppercase;
@@ -114,7 +125,7 @@ nav ul li:hover {
 .submenu {
     display: none;
     position: absolute;
-    color: black ;
+    color: black;
 }
 
 .submenu a {
@@ -123,7 +134,7 @@ nav ul li:hover {
 
 .submenu li:hover {
     background: linear-gradient(-53deg, rgb(71, 71, 245), rgb(131, 106, 241), rgb(238, 134, 247));
-    color: black ;
+    color: black;
 }
 
 nav ul li:hover ul {
@@ -147,50 +158,82 @@ h3 {
 
 a {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.slider-container {
+    display: flex;
+    width: 80%;
+    height: 70vh;
+    overflow-x: scroll;
+    /* ayuda a qye el scroll horizontal del contenedor  no se quede en medio de dos imagenes*/
+    scroll-snap-type: x mandatory;
+    margin: auto;
+    background: linear-gradient(45deg, rgb(28, 190, 141), rgb(75, 86, 233), rgb(110, 110, 209));
+    padding: 40 50 40 50;
+
+
+}
+
+.slider-container img {
+    flex: 80%;
+    object-fit: cover;
+    /* imagenes siempre centradas */
+    scroll-snap-align: center;
+    padding: 20px;
+    background: linear-gradient(-53deg, rgb(71, 71, 245), rgb(131, 106, 241), rgb(238, 134, 247));
+    width: 80%;
+    height: 80%;
+    margin: auto
 }
 
 .poemasg {
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
     justify-content: space-around;
-    
+
 }
-.poemas{
+
+.poemas {
     margin: 10px;
     padding: 5px;
     border-radius: 5%;
-   
+
     text-align: justify;
     background-color: rgb(121, 144, 247);
-    justify-content:space-between
+    justify-content: space-between
 }
 
-.poemas:hover{ background:linear-gradient(30deg, rgb(141, 198, 236), rgb(235, 120, 235), rgb(148, 148, 228))
+.poemas:hover {
+    background: linear-gradient(30deg, rgb(141, 198, 236), rgb(235, 120, 235), rgb(148, 148, 228))
 }
-h5{
+
+h5 {
     text-align: center;
 }
-#menupoemas{
+
+#menupoemas {
     text-align: center;
     display: flex;
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 15px;
     background: linear-gradient(-45deg, rgb(71, 71, 245), rgb(226, 86, 215), rgb(134, 160, 247));
-    justify-content:space-between;
+    justify-content: space-between;
     border-radius: 50px;
 }
 
-#menupoemas a{
-    background:linear-gradient(30deg, rgb(141, 198, 236), rgb(235, 120, 235), rgb(148, 148, 228));
+#menupoemas a {
+    background: linear-gradient(30deg, rgb(141, 198, 236), rgb(235, 120, 235), rgb(148, 148, 228));
     padding: 8px;
     margin: 3;
     border-radius: 10%;
     text-decoration: none;
     color: black;
 }
-#menupoemas a:hover{
-  background: linear-gradient(45deg, rgb(28, 190, 141), rgb(75, 86, 233), rgb(110, 110, 209));
+
+#menupoemas a:hover {
+    background: linear-gradient(45deg, rgb(28, 190, 141), rgb(75, 86, 233), rgb(110, 110, 209));
 }
 
 
@@ -201,6 +244,5 @@ h5{
     background-color: red;
     transform: rotate(-45deg);
     justify-content: flex-end;
-    
-}
 
+}
