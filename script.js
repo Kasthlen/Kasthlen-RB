@@ -15,6 +15,18 @@ let nombreUsuario = " kasthlen";
 
 alert(despedida);*/
 
+function createFlower() {
+    const flower = document.createElement('div');
+    flower.classList.add('flower');
+    flower.style.left = Math.random() * 100 + 'vw';
+    flower.style.animationDuration = Math.random() * 20 + 150 + 's';
+    document.body.appendChild(flower);
+    setTimeout(() => {
+        flower.remove();
+    }, 5000);
+}
+setInterval(createFlower, 100);
+
 
 edad = 17; // cambio mi valor
 edad + 1; // suma 1
@@ -95,7 +107,7 @@ texto.innerHTML = "he guardado mi selector dentro de una variable"
 //cree una variable para no tener que pooner todo el texto, sobretodo cuando voy a 
 //utilizar mi selector muchas veces seguidas en mi pagina
 
-let texto = document.getElementById("texto") 
+let texto = document.getElementById("texto")
 
 
 
