@@ -25,7 +25,7 @@ body {
         transform: translateX(1vh);
     }
     to {
-        transform: translateY(6000vh);
+        transform: translateY(6000vh); /*vista del alto*/
     }
 }
 
@@ -72,7 +72,7 @@ header {
 .corazon:before,
 .corazon:after {
     content: "";
-    background-color: rgb(55, 93, 218);
+    background-color: rgb(199, 55, 218);
     border-radius: 50%;
     height: 50px;
     position: absolute;

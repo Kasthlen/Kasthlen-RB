@@ -18,7 +18,7 @@ alert(despedida);*/
 function createFlower() {
     const flower = document.createElement('div');
     flower.classList.add('flower');
-    flower.style.left = Math.random() * 100 + 'vw';
+    flower.style.left = Math.random() * 100 + 'vw'; //vista del ancho
     flower.style.animationDuration = Math.random() * 20 + 150 + 's';
     document.body.appendChild(flower);
     setTimeout(() => {
