@@ -15,6 +15,17 @@ let nombreUsuario = " kasthlen";
 
 alert(despedida);*/
 
+
+
+
+function saludarUsuario(){
+  let inputUsuario = document.querySelector("#nombre-usuario").value
+  console.log (inputUsuario)
+  alert("Hola de nuevo"+inputUsuario)
+
+
+}
+
 function createFlower() {
     const flower = document.createElement('div');
     flower.classList.add('flower');

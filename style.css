@@ -3,6 +3,17 @@
     padding: 0;
 }  sirve para cambiar toda mi pagina (selector general)*/
 
+
+
+
+
+
+
+
+
+
+
+
 body {
     background: repeating-linear-gradient(rgb(241, 231, 240), rgb(179, 86, 187), rgb(71, 71, 245), rgb(247, 134, 232));
     background-attachment: fixed;
@@ -52,7 +63,7 @@ h1 {
 }
 
 header {
-    background-image: url(/imagenes/violetas.jpeg)
+    background-image: url(/imagenes/violetas.jpeg);
 }
 
 .corazon {
@@ -187,7 +198,7 @@ a {
     width: 80%;
     height: 70vh;
     overflow-x: scroll;
-    /* ayuda a qye el scroll horizontal del contenedor  no se quede en medio de dos imagenes*/
+    /* ayuda a que el scroll horizontal del contenedor  no se quede en medio de dos imagenes*/
     scroll-snap-type: x mandatory;
     margin: auto;
     background: linear-gradient(45deg, rgb(28, 190, 141), rgb(75, 86, 233), rgb(110, 110, 209));
