@@ -15,15 +15,10 @@ let nombreUsuario = " kasthlen";
 
 alert(despedida);*/
 
-
-
-
 function saludarUsuario(){
   let inputUsuario = document.querySelector("#nombre-usuario").value
   console.log (inputUsuario)
   alert("Hola de nuevo"+inputUsuario)
-
-
 }
 
 function createFlower() {
@@ -108,22 +103,17 @@ document.getElementById("caja").innerHTML = "<p>Hasta luego</p>"
 //seleccinar primer elemento que encuentre con la caracteristica que le doy
 document.querySelector("#texto").innerHTML = "metiendo codigo en primer Texto"
 
-
-
 //seleccinar todos los elementos
 document.querySelectorAll("p").innerHTML = "metiendo codigo en P"
-
 
 texto.innerHTML = "he guardado mi selector dentro de una variable"
 //cree una variable para no tener que pooner todo el texto, sobretodo cuando voy a 
 //utilizar mi selector muchas veces seguidas en mi pagina
-
 let texto = document.getElementById("texto")
 
 
 
 //FUNCIONES
-
 function saludar() {
 
     alert("Bienvenido")
@@ -137,6 +127,29 @@ function modoNoche() {
 function modoDia() {
     document.body.style.background = "white";
 }
+//carrusel arquitectura
+const carouselInner = document.querySelector('.carrusel-arq-inner');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+let index = 0;
+
+function showImage(index) {
+    const width = carouselInner.clientWidth;
+    carouselInner.style.transform = `translateX(${-index * width}px)`;
+}
+
+prevButton.addEventListener('click', () => {
+    index = (index > 0) ? index - 1 : carouselInner.children.length - 1;
+    showImage(index);
+});
+
+nextButton.addEventListener('click', () => {
+    index = (index < carouselInner.children.length - 1) ? index + 1 : 0;
+    showImage(index);
+});
+//añadir imagenes
+const images =[""]
+
 
 
 
