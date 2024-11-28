@@ -127,28 +127,32 @@ function modoNoche() {
 function modoDia() {
     document.body.style.background = "white";
 }
-//carrusel arquitectura
-const carouselInner = document.querySelector('.carrusel-arq-inner');
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
-let index = 0;
+function saludarUsuario() {
+    let inputUsuario = document.querySelector("#nombre-usuario").value
+    let generoFemenino = document.getElementById("femenino")
+    let generoMasculino = document.getElementById("masculino")
 
-function showImage(index) {
-    const width = carouselInner.clientWidth;
-    carouselInner.style.transform = `translateX(${-index * width}px)`;
+    if (generoFemenino.checked) {
+        alert("Bienvenida " + inputUsuario);
+    } else if (generoMasculino.checked) {
+        alert("bienvenido " + inputUsuario);
+    } else {
+        alert("hola caracola " + inputUsuario);
+    }
+    mostrarUsuario(inputUsuario);
 }
 
-prevButton.addEventListener('click', () => {
-    index = (index > 0) ? index - 1 : carouselInner.children.length - 1;
-    showImage(index);
-});
+function mostrarUsuario(inputUsuario) {
+    const contenedorUsuarios = document.querySelector("#contenedor-usuarios")
+    const elementoUsuario = document.createElement("li")
 
-nextButton.addEventListener('click', () => {
-    index = (index < carouselInner.children.length - 1) ? index + 1 : 0;
-    showImage(index);
-});
-//añadir imagenes
-const images =[""]
+    //ejemplos de usar texto + datos js
+    //elementoUsuario.innerHTML = "hola" + inputUsuario;
+    //elementoUsuario.innerHTML = `hola ${inputUsuario}`
+    elementoUsuario.innerHTML = inputUsuario;
+    contenedorUsuarios.appendChild(elementoUsuario);
+}
+
 
 
 

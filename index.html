@@ -79,13 +79,49 @@
     <!-- <input type="text">
 <input type="checkbox" name="" id=""> -->
 
-<label for="nombre-usuario">Nombre de usuario:</label> 
-<input type="text" name="nombre-usuario" id="nombre-usuario" placeholder="ejemplo@correo.com">
-<button onclick="saludarUsuario()">Saludo</button>
+
+
+<main>
+    <p>Lista de usuarios:</p>
+<ul id="contenedor-usuarios">
+
+</ul>
+
+    <label for="nombre-usuario">Nombre de usuario:</label>
+    <input type="text" name="nombre-usuario" id="nombre-usuario" placeholder="maria">
+
+    <br>
+    <p>Indica tu genero</p>
+
+    <input type="radio" name="genero" id="femenino" value="femenino">
+    <label for="genero"> Femenino:</label>
+    <input type="radio" name="genero" id="masculino" value="masculino">
+    <label for="genero"> Masculino</label>
+    <br>
+    <br>
+
+    <label for="email">Correo electronico</label>
+    <input type="email" name="gmail" placeholder="Ejemplo@gmail.com" required>
+    <br>
+    <br>
+    <input type="checkbox" name="horoscopo">
+    <label for="horoscopo">quieres recibir notificaciones de tu horoscopo</label>
+    <br>
+    <br>
+    <br>
+    <button onclick=" saludarUsuario()">Saludame</button>
+    <br>
+    <br>
+    <button onclick="saludar()">Saludar</button>
+    <button onclick="modoNoche()"> MODO NOCHE</button>
+    <button onclick="modoDia()">MODO DIA </button>
+    <p id="texto"> </p>
+    <div id="caja"></div>
+    <p id="articulo"></p>
+</main>
 
 
 
-    </Main>
     <a href="#inicio"><div class="corazon"></div></a>
 
     <section>
