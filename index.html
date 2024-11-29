@@ -10,67 +10,67 @@
 
 </head>
 
-    <header>
+<header>
 
-        <h1>Kasthlen Rodríguez Blandón
-        </h1>
-        <h4 id="descripción"> <em>Este es un espacio para compartir mis creaciones, espero les guste</h4></em>
+    <h1>Kasthlen Rodríguez Blandón
+    </h1>
+    <h4 id="descripción"> <em>Este es un espacio para compartir mis creaciones, espero les guste</h4></em>
 
-        <nav id="inicio">
-            <ul>
-                <li>Fotos
-                    <ul class="submenu">
-                        <a href="#naturaleza">
-                            <li>Naturaleza</li>
-                        </a>
+    <nav id="inicio">
+        <ul>
+            <li>Fotos
+                <ul class="submenu">
+                    <a href="#naturaleza">
+                        <li>Naturaleza</li>
+                    </a>
 
-                        <a href="#arquitectura">
-                            <li>Arquitectura</li>
-                        </a>
-                        <a href="#arte">
-                            <li>Arte</li>
-                        </a>
-                    </ul>
-                </li>
-
-
-
-                <li>Dibujos
-                    <ul class="submenu">
-                        <a href="#mandalas">
-                            <li>Mandalas</li>
-                        </a>
-                        <a href="#creaciones">
-                            <li>Creaciones</li>
-                        </a>
-                    </ul>
-                </li>
+                    <a href="#arquitectura">
+                        <li>Arquitectura</li>
+                    </a>
+                    <a href="#arte">
+                        <li>Arte</li>
+                    </a>
+                </ul>
+            </li>
 
 
-                <li>Obras
-                    <ul class="submenu">
-                        <a href="#poemas">
-                            <li>Poemas</li>
-                        </a>
-                        <a href="#esctritos">
-                            <li>Escritos </li>
-                        </a>
-                    </ul>
-                </li>
-            </ul>
 
-        </nav>
+            <li>Dibujos
+                <ul class="submenu">
+                    <a href="#mandalas">
+                        <li>Mandalas</li>
+                    </a>
+                    <a href="#creaciones">
+                        <li>Creaciones</li>
+                    </a>
+                </ul>
+            </li>
 
-        <br>
-        <br>
-        <br>
-        <br>
-    </header>
+
+            <li>Obras
+                <ul class="submenu">
+                    <a href="#poemas">
+                        <li>Poemas</li>
+                    </a>
+                    <a href="#esctritos">
+                        <li>Escritos </li>
+                    </a>
+                </ul>
+            </li>
+        </ul>
+
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <br>
+</header>
 <Main>
     <button onclick="saludar()">Saludar</button>
     <button onclick="modoNoche()">Modo Noche</button>
     <button onclick="modoDia()">Modo Dia</button>
-    
+
     <p id="texto"></p>
     <div id="caja"></div>
 
@@ -81,165 +81,201 @@
 
 
 
-<main>
-    <p>Lista de usuarios:</p>
-<ul id="contenedor-usuarios">
+    <main>
+        <p>Lista de usuarios:</p>
+        <ul id="contenedor-usuarios">
 
-</ul>
+        </ul>
 
-    <label for="nombre-usuario">Nombre de usuario:</label>
-    <input type="text" name="nombre-usuario" id="nombre-usuario" placeholder="maria">
+        <label for="nombre-usuario">Nombre de usuario:</label>
+        <input type="text" name="nombre-usuario" id="nombre-usuario" placeholder="maria">
 
-    <br>
-    <p>Indica tu genero</p>
+        <br>
+        <p>Indica tu genero</p>
 
-    <input type="radio" name="genero" id="femenino" value="femenino">
-    <label for="genero"> Femenino:</label>
-    <input type="radio" name="genero" id="masculino" value="masculino">
-    <label for="genero"> Masculino</label>
-    <br>
-    <br>
+        <input type="radio" name="genero" id="femenino" value="femenino">
+        <label for="genero"> Femenino:</label>
+        <input type="radio" name="genero" id="masculino" value="masculino">
+        <label for="genero"> Masculino</label>
+        <br>
+        <br>
 
-    <label for="email">Correo electronico</label>
-    <input type="email" name="gmail" placeholder="Ejemplo@gmail.com" required>
-    <br>
-    <br>
-    <input type="checkbox" name="horoscopo">
-    <label for="horoscopo">quieres recibir notificaciones de tu horoscopo</label>
-    <br>
-    <br>
-    <br>
-    <button onclick=" saludarUsuario()">Saludame</button>
-    <br>
-    <br>
-    <button onclick="saludar()">Saludar</button>
-    <button onclick="modoNoche()"> MODO NOCHE</button>
-    <button onclick="modoDia()">MODO DIA </button>
-    <p id="texto"> </p>
-    <div id="caja"></div>
-    <p id="articulo"></p>
-</main>
+        <label for="email">Correo electronico</label>
+        <input type="email" name="gmail" placeholder="Ejemplo@gmail.com" required>
+        <br>
+        <br>
+        <input type="checkbox" name="horoscopo">
+        <label for="horoscopo">quieres recibir notificaciones de tu horoscopo</label>
+        <br>
+        <br>
+        <br>
+        <button onclick=" saludarUsuario()">Saludame</button>
+        <br>
+        <br>
+        <button onclick="saludar()">Saludar</button>
+        <button onclick="modoNoche()"> MODO NOCHE</button>
+        <button onclick="modoDia()">MODO DIA </button>
+        <p id="texto"> </p>
+        <div id="caja"></div>
+        <p id="articulo"></p>
+    </main>
 
-
-
-    <a href="#inicio"><div class="corazon"></div></a>
+    <a href="#inicio">
+        <div class="corazon"></div>
+    </a>
 
     <section>
         <h2> Fotos</h2>
         <article>
             <h3 id="naturaleza"> Naturaleza</h3>
-            
-            <div class="slider-container">  
-                <img  class="slider-item" src="imagenes/naturaleza/1.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/2.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/3.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/5.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/6.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/7.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/IMG-20190628-WA0151.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/IMG_20211115_054315.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/IMG_20211115_153837.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/IMG_20211120_173112.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/IMG_20211120_175634.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/IMG_20211120_175839.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/IMG_20211121_141849_201.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/IMG_20211122_121910.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/IMG_20211122_122153.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/IMG_20211124_143052.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/IMG_20211125_170100.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/IMG_20211126_131831.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/IMG_20211126_131837.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/IMG_20220415_143251.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/IMG_20220630_075142.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/IMG_20220630_091540.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/IMG_20220630_091531.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/IMG_20220630_091629.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/IMG_20220630_091640.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/IMG_20220630_091819.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/IMG_20220630_091845.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/trashed-1647985709-IMG_20211126_131834.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/naturaleza 10.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/naturaleza 8.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/naturaleza 7.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/naturaleza 6.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/naturaleza 5.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/naturaleza 4.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/naturaleza 3.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/naturaleza 2.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/naturaleza 1.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="imagenes/naturaleza/naturaleza 6.jpg" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
-                <img  class="slider-item" src="" alt="imagen de un paisaje">
+
+            <div class="slider-container">
+                <img class="slider-item" src="imagenes/naturaleza/1.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/2.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/3.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/5.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/6.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/7.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/IMG-20190628-WA0151.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/IMG_20211115_054315.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/IMG_20211115_153837.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/IMG_20211120_173112.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/IMG_20211120_175634.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/IMG_20211120_175839.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/IMG_20211121_141849_201.jpg"
+                    alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/IMG_20211122_121910.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/IMG_20211122_122153.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/IMG_20211124_143052.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/IMG_20211125_170100.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/IMG_20211126_131831.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/IMG_20211126_131837.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/IMG_20220415_143251.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/IMG_20220630_075142.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/IMG_20220630_091540.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/IMG_20220630_091531.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/IMG_20220630_091629.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/IMG_20220630_091640.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/IMG_20220630_091819.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/IMG_20220630_091845.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/trashed-1647985709-IMG_20211126_131834.jpg"
+                    alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/naturaleza 10.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/naturaleza 8.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/naturaleza 7.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/naturaleza 6.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/naturaleza 5.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/naturaleza 4.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/naturaleza 3.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/naturaleza 2.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/naturaleza 1.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="imagenes/naturaleza/naturaleza 6.jpg" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
+                <img class="slider-item" src="" alt="imagen de un paisaje">
             </div>
-                
-                
-        </article>
-        <article>
-            <h3 id="arquitectura"> Arquitectura</h3>
-            <div class="carrusel-arq">
-                <div class="carrusel-arq-inner">
-                </div>
-                <button class="prev"></button>
-                <button class="next"></button>
-            </div>
+
 
         </article>
         <article>
-            <h3 id="arte">Arte</h3>
+            <h3 id="arquitectura"> Arquitectura</h3>
+
+            <div class="slider-container2">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 1.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 2.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 3.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 4.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 5.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 6.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 7.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 8.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 9.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 10.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 11.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 12.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 13.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 14.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 15.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 16.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 17.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 21.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 22.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 23.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 24.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 25.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 26.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 27.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 28.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 29.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 30.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 31.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 32.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 33.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 34.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 35.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 36.jpg" alt="imagen de un paisaje arquitectonico">
+                <img class="slider-item2" src="imagenes/arquitectura/imagen 37.jpg" alt="imagen de un paisaje arquitectonico">
+            
+            </div>
+            
         </article>
-       
+        <article>
+            <h3 id="arte">Arte</h3>
+            <div class="carousel"></div>
+
+        </article>
+
     </section>
     <hr>
     <section>
@@ -257,58 +293,58 @@
         <h3 id="poemas">Poemas</h3>
 
 
-            <div id="menupoemas">
-                <a href="#poema1">
-                    <div>Frio</div>
-                </a>
-                <a href="#poema2">
-                    <div>Refugio</div>
-                </a>
-                <a href="#poema3">
-                    <div>Lluvia</div>
-                </a>
-                <a href="#poema4">
-                    <div>Despedida</div>
-                </a>
-                <a href="#poema5">
-                    <div>Dejame</div>
-                </a>
-                <a href="#poema6">
-                    <div>Te busco</div>
-                </a>
-                <a href="#poema7">
-                    <div>Tiempo</div>
-                </a>
-                <a href="#poema8">
-                    <div>Desdicha
-                    </div>
-                </a>
-                <a href="#poema9">
-                    <div>Soledad</div>
-                </a>
-                <a href="#poema11">
-                    <div>La respuesta</div>
-                </a>
-                <a href="#poema11">
-                    <div>Anhelo</div>
-                </a>
-                <a href="#poema12">
-                    <div>Pensamiento</div>
-                </a>
-                <a href="#poema13">
-                    <div>Agonia</div>
-                </a>
-                <a href="#poema14">
-                    <div>M</div>
-                </a>
-                <a href="#poema15">
-                    <div>Recuerdo</div>
-                </a>
-                <a href="#poema17">
-                    <div>Pensamiento</div>
-                </a>
-            </div>
-            <article class="poemasg">
+        <div id="menupoemas">
+            <a href="#poema1">
+                <div>Frio</div>
+            </a>
+            <a href="#poema2">
+                <div>Refugio</div>
+            </a>
+            <a href="#poema3">
+                <div>Lluvia</div>
+            </a>
+            <a href="#poema4">
+                <div>Despedida</div>
+            </a>
+            <a href="#poema5">
+                <div>Dejame</div>
+            </a>
+            <a href="#poema6">
+                <div>Te busco</div>
+            </a>
+            <a href="#poema7">
+                <div>Tiempo</div>
+            </a>
+            <a href="#poema8">
+                <div>Desdicha
+                </div>
+            </a>
+            <a href="#poema9">
+                <div>Soledad</div>
+            </a>
+            <a href="#poema11">
+                <div>La respuesta</div>
+            </a>
+            <a href="#poema11">
+                <div>Anhelo</div>
+            </a>
+            <a href="#poema12">
+                <div>Pensamiento</div>
+            </a>
+            <a href="#poema13">
+                <div>Agonia</div>
+            </a>
+            <a href="#poema14">
+                <div>M</div>
+            </a>
+            <a href="#poema15">
+                <div>Recuerdo</div>
+            </a>
+            <a href="#poema17">
+                <div>Pensamiento</div>
+            </a>
+        </div>
+        <article class="poemasg">
 
             <div id="poema1" class="poemas">
                 <h5>Frio</h5>
@@ -797,8 +833,8 @@
 
     </section>
     <hr>
-    <script src="script.js" ></script>
-</body>
+    <script src="script.js"></script>
+    </body>
 
 
 

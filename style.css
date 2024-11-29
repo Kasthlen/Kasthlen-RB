@@ -204,41 +204,47 @@ a {
     margin: auto
 }
 
-.carrusel-arq {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    overflow: hidden;
-}
-
-.carrusel-arq-inner {
+.slider-container2 {
     display: flex;
-    transition: transform 0.5s ease;
+    width: 80%;
+    height: 70vh;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    margin: auto;
+    background: linear-gradient(45deg, rgb(28, 190, 141), rgb(75, 86, 233), rgb(110, 110, 209));
+    padding: 40 50 40 50;
 }
 
-.carrusel-arq-inner img {
-    width: 100%;
-    flex-shrink: 0;
+.slider-container2 img {
+    flex: 80%;
+    object-fit: cover;
+    scroll-snap-align: center;
+    padding: 20px;
+    background: linear-gradient(-53deg, rgb(71, 71, 245), rgb(131, 106, 241), rgb(238, 134, 247));
+    width: 80%;
+    height: 80%;
+    margin: auto
 }
 
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+.carousel {
+    display: flex;
+    width: 80%;
+    height: 70vh;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    margin: auto;
+    background: linear-gradient(45deg, rgb(28, 190, 141), rgb(75, 86, 233), rgb(110, 110, 209));
+    padding: 40 50 40 50;
 }
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
+.carousel img {
+    flex: 80%;
+    object-fit: cover;
+    scroll-snap-align: center;
+    padding: 20px;
+    background: linear-gradient(-53deg, rgb(71, 71, 245), rgb(131, 106, 241), rgb(238, 134, 247));
+    width: 80%;
+    height: 80%;
+    margin: auto
 }
 
 

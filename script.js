@@ -15,10 +15,10 @@ let nombreUsuario = " kasthlen";
 
 alert(despedida);*/
 
-function saludarUsuario(){
-  let inputUsuario = document.querySelector("#nombre-usuario").value
-  console.log (inputUsuario)
-  alert("Hola de nuevo"+inputUsuario)
+function saludarUsuario() {
+    let inputUsuario = document.querySelector("#nombre-usuario").value
+    console.log(inputUsuario)
+    alert("Hola de nuevo" + inputUsuario)
 }
 
 function createFlower() {
@@ -106,7 +106,7 @@ document.querySelector("#texto").innerHTML = "metiendo codigo en primer Texto"
 //seleccinar todos los elementos
 document.querySelectorAll("p").innerHTML = "metiendo codigo en P"
 
-texto.innerHTML = "he guardado mi selector dentro de una variable"
+// texto.innerHTML = "he guardado mi selector dentro de una variable"
 //cree una variable para no tener que pooner todo el texto, sobretodo cuando voy a 
 //utilizar mi selector muchas veces seguidas en mi pagina
 let texto = document.getElementById("texto")
@@ -151,6 +151,16 @@ function mostrarUsuario(inputUsuario) {
     //elementoUsuario.innerHTML = `hola ${inputUsuario}`
     elementoUsuario.innerHTML = inputUsuario;
     contenedorUsuarios.appendChild(elementoUsuario);
+}
+
+const carousel = document.querySelector('.carousel');
+const imageFolder = 'imagenes/arte';
+const imageCount = 10;
+
+for (let i = 1; i <= imageCount; i++) {
+    const img = document.createElement('img');
+    img.src = `imagenes/arte/imagen${i}.jpg`;
+    carousel.appendChild(img);
 }
 
 
