@@ -153,6 +153,15 @@ function mostrarUsuario(inputUsuario) {
     contenedorUsuarios.appendChild(elementoUsuario);
 }
 
+document.getElementById('openDialog').addEventListener('click', function() {
+    document.getElementById('dialog').style.display = 'flex';
+});
+
+document.querySelector('.close-button').addEventListener('click', function() {
+    document.getElementById('dialog').style.display = 'none';
+});
+
+
 const carousel = document.querySelector('.carousel');
 const imageFolder = 'imagenes/arte';
 const imageCount = 10;
